@@ -9,3 +9,6 @@ urlpatterns = [
     path('djangoapp/', include('djangoapp.urls')),
     re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
