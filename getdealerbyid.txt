@@ -1,2 +1,2 @@
-curl -X GET "http://localhost:3030/fetchDealer/3"
-{"_id":"6a424107e62dcdedc42d4a07","id":3,"city":"Birmingham","state":"Alabama","address":"9477 Twin Pines Center","zip":"35285","lat":"33.5446","long":"-86.9292","short_name":"Sub-Ex","full_name":"Sub-Ex Car Dealership","__v":0}
+curl -X GET "https://shashinirath-3030.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/fetchDealer/3"
+"Can't find tool for shashinirath"
