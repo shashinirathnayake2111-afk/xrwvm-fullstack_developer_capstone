@@ -1,0 +1,27 @@
+$ gh run view 28425423780 --verbose
+✓ main Lint Code · 28425423780
+Triggered via push about 15 minutes ago
+
+JOBS
+✓ Lint JavaScript Files in 10s (ID 84227361377)
+  ✓ Set up job
+  ✓ Checkout Repository
+  ✓ Install Node.js
+  ✓ Install JSHint
+  ✓ Run Linter
+  ✓ Post Install Node.js
+  ✓ Post Checkout Repository
+  ✓ Complete job
+✓ Lint Python Files in 10s (ID 84227361396)
+  ✓ Set up job
+  ✓ Checkout Repository
+  ✓ Set up Python
+  ✓ Install dependencies
+  ✓ Print working directory
+  ✓ Run Linter
+  ✓ Post Set up Python
+  ✓ Post Checkout Repository
+  ✓ Complete job
+
+For more information about a job, try: gh run view --job=<job-id>
+View this run on GitHub: https://github.com/shashinirathnayake2111-afk/xrwvm-fullstack_developer_capstone/actions/runs/28425423780
