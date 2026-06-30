@@ -8,10 +8,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('djangoapp/', include('djangoapp.urls')),
     path('dealers/', TemplateView.as_view(template_name="index.html")),
-    path('dealer/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
-    path('postreview/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
+    path('dealer/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
+    path('postreview/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
     re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.STATIC_URL,
+                          document_root=settings.STATIC_ROOT)
